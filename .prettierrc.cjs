@@ -2,14 +2,15 @@
  * @type {import('prettier').Options}
  */
 module.exports = {
-  printWidth: 80,
+  printWidth: 120,
   tabWidth: 2,
   useTabs: false,
-  semi: false,
-  singleQuote: false,
-  trailingComma: "none",
+  semi: true,
+  singleQuote: true,
+  trailingComma: "es5",
   bracketSpacing: true,
   bracketSameLine: true,
+  "arrowParens": "avoid",
   plugins: [require.resolve("@plasmohq/prettier-plugin-sort-imports")],
   importOrder: ["^@plasmohq/(.*)$", "^~(.*)$", "^[./]"],
   importOrderSeparation: true,
